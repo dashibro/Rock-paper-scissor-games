@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title{
+    color: white;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+/* Rock/Paper/Scissors heading */
+.heading{
+    position: absolute;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 10px;
+    top:-20px;
+    right: 38%;
+    transition: 0.2s;
+}
+
+.heading:hover{
+    color:gray;
+    border: 8px solid gray;
+}
+
+
+/* Screen */
+.screen{
+    background-color: transparent;
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 50px;
+    height: 300px;
+    width: 780px;
+    top:130px;
+    left: 380px;
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Score */
+.Score{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: "poppins";
+    font-size: xx-large;
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 30px;
+    top:490px;
+    left: 590px;
+    height: 50px;
+    width: 60px;
+    transform: scale(1.5);
+}
+
+.result{
+     padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: "poppins";
+    font-size: xx-large;
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 30px;
+    top:490px;
+    left: 840px;
+    transform: scale(1.5);
+}
+
+/* Options */
+.Option{
+    position: absolute;
+    top: 650px;
+    display: flex;
+    gap: 100px;
+}
+.option{
+    background-color: transparent;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+@keyframes pop {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+/* .option:hover{
+    transform: scale(1.2);
+} */
+
+.option:active{
+    animation: pop 0.2s ease;
+}
+
+#option3{
+    height: 110px;
+    width: 115px;
+}
+
+#reset{
+    position: absolute;
+    top:800px;
+    left: 710px;
+    height: 60px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-family: "poppins";
+    font-size: large;
+}
+
+#reset:active{
+    animation: pop 0.2s ease;
+}
